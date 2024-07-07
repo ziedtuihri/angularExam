@@ -1,0 +1,23 @@
+
+
+<table>
+
+    <tbody>
+        <div>
+            <p>min Price</p>
+            <input [(ngModel)]="min" (ngModelChange)="changed()" class="form-control" type="number"> 
+            <p>max Price</p>
+            <input [(ngModel)]="max" (ngModelChange)="changed()" class="form-control" type="number">
+        </div>
+
+        <div *ngFor="let property of filteredPropertyList">
+
+             <h3>{{ property.name }}</h3> <br>
+            <td>  Adresse : {{ property.adresse }} </td><br>
+            <td> Prix : {{ property.price }} </td><br>
+            <td> Nombre de vue: {{ property.available }} </td><br>
+            <button *ngIf="property.available" (click)="reservation(property.id)">Reserver la propriete</button>
+            <button (click)="delete(property.id)">delete</button>
+        </div>
+    </tbody>
+</table>

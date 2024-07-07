@@ -1,0 +1,18 @@
+
+
+<h3> Reserver la propriete avec ID: {{ propertyID }}</h3>
+
+<form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+    <h5>nom du locataire</h5> 
+    <input formControlName="nom">
+    <h5>Numéro du Telephone</h5> 
+    <input type="number" formControlName="phone">
+    <h5>Date du début de la location :</h5> 
+    <input type="date" formControlName="dateStart">
+    <h5>Date du fin de la location :</h5> 
+    <input type="date" formControlName="dateEnd">
+
+    <br><br><br>
+    <button type="submit" [disabled]="reservationForm.invalid"> Valider </button>
+
+</form>
