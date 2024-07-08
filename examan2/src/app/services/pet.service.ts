@@ -38,5 +38,9 @@ export class PetService {
     return this.http.get<Pet>(this.apiUrlPet + id);
   }
 
+  updatePet(id: string, pet: Pet): Observable<void> {
+      return this.http.put<void>(this.apiUrlPet + id, pet);
+  }
+
 }
 

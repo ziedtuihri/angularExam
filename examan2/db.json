@@ -3,8 +3,8 @@
     {
       "id": "86",
       "name": "uouiouire",
-      "vaccinationDate": "2024-07-02",
-      "vaccinated": false,
+      "vaccinationDate": "Tue Jul 09 2024 00:54:25 GMT+0200 (Central European Summer Time)",
+      "vaccinated": true,
       "owner": {
         "id": 60,
         "name": "Test hjfdf",
@@ -12,10 +12,10 @@
       }
     },
     {
-      "id": 402,
+      "id": "402",
       "name": "dfsdq",
-      "vaccinationDate": "2024-07-02",
-      "vaccinated": false,
+      "vaccinationDate": "Tue Jul 09 2024 00:54:38 GMT+0200 (Central European Summer Time)",
+      "vaccinated": true,
       "owner": {
         "id": 48,
         "name": "Afzrte",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "id": 117,
+      "id": "117",
       "name": "fsqfqds",
       "vaccinationDate": "2024-07-02",
       "vaccinated": false,
@@ -41,7 +41,7 @@
       "phone": 12345678
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Afzrte",
       "phone": 12345678
     }
