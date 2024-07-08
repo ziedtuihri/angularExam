@@ -1,7 +1,18 @@
-<p>
+<h1> add Pets </h1>
 
-    name!:            string
-    vaccinationDate!: string
-    vaccinated!:      boolean
-    owner!: Owner
-</p>
+
+<form [formGroup]="petForm" (ngSubmit)="onSubmit()">
+
+    <h5>Name Pet</h5>
+    <input formControlName="namePet">
+    <h5> vaccination Date</h5>
+    <input type="date" formControlName="vaccinationDate">
+    <h5>Name Owner</h5>
+    <input formControlName="nameOwner">
+
+    <h5>phone </h5>
+    <input type="number" formControlName="phone"><br><br><br>
+
+    <button type="submit"  [disabled]="petForm.invalid">Validé</button>
+
+</form>

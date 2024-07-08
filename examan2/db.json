@@ -1,4 +1,49 @@
 {
-    "pet":          [],
-    "owner":        []
+  "pet": [
+    {
+      "id": "86",
+      "name": "uouiouire",
+      "vaccinationDate": "2024-07-02",
+      "vaccinated": false,
+      "owner": {
+        "id": 60,
+        "name": "Test hjfdf",
+        "phone": 12345678
+      }
+    },
+    {
+      "id": 402,
+      "name": "dfsdq",
+      "vaccinationDate": "2024-07-02",
+      "vaccinated": false,
+      "owner": {
+        "id": 48,
+        "name": "Afzrte",
+        "phone": 12345678
+      }
+    },
+    {
+      "id": 117,
+      "name": "fsqfqds",
+      "vaccinationDate": "2024-07-02",
+      "vaccinated": false,
+      "owner": {
+        "id": 10,
+        "name": "Azrter",
+        "phone": 12345678
+      }
+    }
+  ],
+  "owner": [
+    {
+      "id": "60",
+      "name": "Test hjfdf",
+      "phone": 12345678
+    },
+    {
+      "id": 48,
+      "name": "Afzrte",
+      "phone": 12345678
+    }
+  ]
 }

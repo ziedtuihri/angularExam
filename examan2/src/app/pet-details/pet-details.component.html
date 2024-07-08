@@ -1,0 +1,11 @@
+
+
+<h2> Pet details </h2>
+
+<div *ngIf="pet">
+    <h2>{{ pet.name }}</h2>
+    <p><strong>Vaccination Date:</strong> {{ pet.vaccinationDate }}</p>
+    <p><strong>Vaccinated:</strong> {{ pet.vaccinated ? 'Yes' : 'No' }}</p>
+    <p><strong>Owner Name:</strong> {{ pet.owner.name }}</p>
+    <p><strong>Owner Phone:</strong> {{ pet.owner.phone }}</p>
+  </div>

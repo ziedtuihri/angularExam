@@ -8,17 +8,28 @@ import { AddPetComponent } from './add-pet/add-pet.component';
 import { PetsComponent } from './pets/pets.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+// import for the service
+import { HttpClientModule } from '@angular/common/http';
+
+// import for the Form
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PetDetailsComponent } from './pet-details/pet-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     AddPetComponent,
     PetsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PetDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

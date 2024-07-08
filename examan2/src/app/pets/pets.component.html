@@ -1,1 +1,15 @@
-<p>pets works!</p>
+
+
+
+<div *ngIf="unvaccinatedPets.length > 0">
+    <h2>Unvaccinated Pets</h2>
+    <ul>
+      <li *ngFor="let pet of unvaccinatedPets">
+        <strong>{{ pet.name }}</strong> - {{ pet.owner.name }} ({{ pet.vaccinationDate }}) <a [routerLink]="['/petDetails', pet.id]">Details</a>  <br><br>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="unvaccinatedPets.length === 0">
+    <p>No unvaccinated pets found.</p>
+  </div>
+  
