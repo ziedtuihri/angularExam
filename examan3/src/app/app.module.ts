@@ -11,12 +11,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 // import for the Form
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DatailVoyageComponent } from './datail-voyage/datail-voyage.component';
+import { ErrorsComponent } from './errors/errors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddVoyageComponent,
-    ListeVoyageComponent
+    ListeVoyageComponent,
+    DatailVoyageComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,

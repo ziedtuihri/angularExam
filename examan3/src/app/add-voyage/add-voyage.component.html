@@ -1,19 +1,22 @@
 
 
-<form [formGroup]="voyageForm"  (ngSubmit)="onSubmit()">
-
-    <h5>Description : </h5>
-    <textarea formControlName="description"></textarea>
-
-    <h5> Depart </h5>
+<form [formGroup]="voyageForm" (ngSubmit)="onSubmit()">
+    <h5>Description</h5>
+    <input formControlName="description">
+    <app-errors [control]="voyageForm.get('description')!"></app-errors>
+  
+    <h5>Depart</h5>
     <input formControlName="depart">
-
-    <h5> Arrivé </h5>
+    <app-errors [control]="voyageForm.get('depart')!"></app-errors>
+  
+    <h5>Arrive</h5>
     <input formControlName="arrive">
-
-    <h5> nombre de place</h5>
-    <input type="number" formControlName="nb_place"><br><br>
-
+    <app-errors [control]="voyageForm.get('arrive')!"></app-errors>
+  
+    <h5>Nombre de places</h5>
+    <input type="number" formControlName="nb_place">
+    <app-errors [control]="voyageForm.get('nb_place')!"></app-errors>
+  
     <button type="submit" [disabled]="voyageForm.invalid">Validé</button>
-</form>
-
+  </form>
+  

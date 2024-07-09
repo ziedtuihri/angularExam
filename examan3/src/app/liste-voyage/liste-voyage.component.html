@@ -8,8 +8,10 @@
             <h3>{{ voyage.description }}</h3> <br>
             <td>  Adresse : {{ voyage.depart }} </td><br>
             <td> Prix : {{ voyage.arrive }} </td><br>
-            <td> Nombre de vue: {{ voyage.nb_place }} </td><br>
+            <td> Nombre de place : {{ voyage.nb_place }} </td><br>
             <td> Nombre de vue: {{ voyage.nb_view }} </td><br>
+            <a [routerLink]="['/list']" (click)="reserve(voyage.id)"> Reservé </a><br>
+            <a [routerLink]="['/details']" (click)="detail(voyage.id)"> Détail </a>
         </div>
     </tbody>
 </table>

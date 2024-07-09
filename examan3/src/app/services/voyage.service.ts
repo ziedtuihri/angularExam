@@ -23,6 +23,15 @@ export class VoyageService {
     return this.http.get<Voyage[]>(this.baseUrl);
   }
 
+  getVoyageById(id: number): Observable<Voyage>{
+    return this.http.get<Voyage>(this.baseUrl + id);
+  }
+
+
+  updateVoyage(id: number, updateVoyage:  Voyage): Observable<void> {
+    return this.http.put<void>(this.baseUrl +id, updateVoyage);
+  }
+
 
   addVoyage(voyage: Voyage): Observable<void>{
     return this.http.post<void>(this.baseUrl, voyage);
