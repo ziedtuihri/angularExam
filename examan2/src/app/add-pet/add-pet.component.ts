@@ -26,8 +26,10 @@ export class AddPetComponent implements OnInit{
   ngOnInit(): void{
     this.petForm = this.formBuilder.group({
       namePet:          ['', Validators.required],
+      // phone doit avoir 8 chiffre 
       phone: ['', [Validators.required, Validators.pattern('^[0-9]{8}$')]],
       vaccinationDate:    ['', Validators.required],
+      // name Owner commance par une lettre majuscule.
       nameOwner: [
         '', 
         [

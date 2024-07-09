@@ -36,6 +36,7 @@ export class ReservationFormComponent implements OnInit{
 
       this.reservationForm = this.formBuilder.group({
             nom:          ['', [Validators.required, Validators.minLength(5)]],
+            // phone seulement des chiffre 
             phone:        ['', Validators.required, Validators.pattern('^[0-9]*$')],
             dateStart:    ['', Validators.required],
             dateEnd:      ['', Validators.required]
