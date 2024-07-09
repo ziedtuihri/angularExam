@@ -14,7 +14,9 @@ export class AddVoyageComponent implements OnInit{
   })
 
   ngOnInit(): void {
-    this.voyageForm =
+    this.voyageForm = this.formBuilder.group({
+      
+    })
   }
 
   constructor(
