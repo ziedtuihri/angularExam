@@ -1,1 +1,16 @@
-<p>liste-voyage works!</p>
+
+<table>
+
+    <tbody>
+
+        <div *ngFor="let voyage of voyages">
+
+            <h3>{{ voyage.description }}</h3> <br>
+            <td>  Adresse : {{ voyage.depart }} </td><br>
+            <td> Prix : {{ voyage.arrive }} </td><br>
+            <td> Nombre de vue: {{ voyage.nb_place }} </td><br>
+            <td> Nombre de vue: {{ voyage.nb_view }} </td><br>
+        </div>
+    </tbody>
+</table>
+

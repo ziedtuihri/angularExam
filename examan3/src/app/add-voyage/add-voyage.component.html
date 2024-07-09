@@ -1,16 +1,19 @@
 
 
-<form [formGroup]="voyageForm">
+<form [formGroup]="voyageForm"  (ngSubmit)="onSubmit()">
 
     <h5>Description : </h5>
-    <textarea></textarea>
+    <textarea formControlName="description"></textarea>
 
     <h5> Depart </h5>
-    <input>
+    <input formControlName="depart">
 
     <h5> Arrivé </h5>
-    <input>
+    <input formControlName="arrive">
 
     <h5> nombre de place</h5>
-    <input>
+    <input type="number" formControlName="nb_place"><br><br>
+
+    <button type="submit" [disabled]="voyageForm.invalid">Validé</button>
 </form>
+

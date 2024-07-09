@@ -5,6 +5,7 @@ import { AddVoyageComponent } from './add-voyage/add-voyage.component';
 
 
 const routes: Routes = [
+  {path:'',             component: ListeVoyageComponent},
   {path:'list',         component:ListeVoyageComponent},
   {path:'addVoyage',    component:AddVoyageComponent}
 ];
