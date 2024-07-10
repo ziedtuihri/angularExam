@@ -1,7 +1,7 @@
 import { Owner } from "./owner"
 
 export class Pet {
-    id!:              number
+    id!:              string
     name!:            string
     vaccinationDate!: string
     vaccinated!:      boolean

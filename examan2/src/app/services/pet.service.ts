@@ -23,6 +23,7 @@ export class PetService {
   ) { }
 
   addPet(pet: Pet): Observable<void>{
+    pet.id.toString();
     return this.http.post<void>(this.apiUrlPet, pet);
   }
 

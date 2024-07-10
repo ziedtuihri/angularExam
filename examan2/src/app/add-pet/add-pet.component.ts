@@ -53,14 +53,14 @@ export class AddPetComponent implements OnInit{
 
       // Assign values to owner
       this.owner = {
-        id: this.getRandomInt(100), // Set a default or generate an id
+        id: this.getRandomInt(100).toString(), // Set a default or generate an id
         name: formValues.nameOwner,
         phone: formValues.phone
       };
 
       // Assign values to pet
       this.pet = {
-        id: this.getRandomInt(500), // Set a default or generate an id
+        id: this.getRandomInt(500).toString(), // Set a default or generate an id
         name: formValues.namePet,
         vaccinationDate: formValues.vaccinationDate,
         vaccinated: false, // Default value, adjust as necessary

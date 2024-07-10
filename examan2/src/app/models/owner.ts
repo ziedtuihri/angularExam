@@ -1,5 +1,5 @@
 export class Owner {
-    id!: number;
+    id!: string;
     name!: string;
     phone!: string;
 }
