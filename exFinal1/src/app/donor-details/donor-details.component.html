@@ -1,0 +1,14 @@
+<div *ngIf="donorDonations.length > 0">
+    <h2>Donor Details</h2>
+    <ul>
+      <li *ngFor="let donation of donorDonations">
+        <p><strong>Amount:</strong> {{ donation.amount }}</p>
+        <p><strong>Donation Date:</strong> {{ donation.DonationDate }}</p>
+      </li>
+    </ul>
+    <h3>Total Amount: {{ totalAmount }}</h3>
+  </div>
+  <div *ngIf="donorDonations.length === 0">
+    <p>No donations found for this donor.</p>
+  </div>
+  

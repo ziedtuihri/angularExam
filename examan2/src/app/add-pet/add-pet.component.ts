@@ -68,8 +68,8 @@ export class AddPetComponent implements OnInit{
       };
 
       this.petService.addOwner(this.owner).subscribe({
-
       });
+      
       this.petService.addPet(this.pet).subscribe(data =>{
           console.log("data // ", data);
           this.router.navigate(['/pets']);

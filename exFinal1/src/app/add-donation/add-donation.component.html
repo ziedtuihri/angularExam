@@ -1,0 +1,58 @@
+
+
+<form [formGroup]="donationForm" (ngSubmit)="onSubmit()">
+
+    <h5>Amount:</h5>
+    <input formControlName="amount">
+    <div *ngIf="donationForm.get('amount')!.invalid && (donationForm.get('amount')!.touched || donationForm.get('amount')!.dirty)">
+      <div *ngIf="donationForm.get('amount')!.errors!['required']">
+        Amount is required
+      </div>
+      <div *ngIf="donationForm.get('amount')!.errors!['min']">
+        Amount must be greater than 0
+      </div>
+    </div>
+
+
+    <!-- <h5>Donation Date : </h5> 
+    <input type="date" formControlName="donationDate"> -->
+
+    <h5>Name Donor</h5> 
+    <input  formControlName="nameDonor">
+    <div *ngIf="donationForm.get('nameDonor')!.invalid &&
+    (donationForm.get('nameDonor')!.touched || donationForm.get('nameDonor')!.dirty)">
+       <div *ngIf="donationForm.get('nameDonor')!.errors!['required']">
+           phone is required
+       </div>
+
+   </div>
+
+    
+    <h5>email Donor</h5> 
+    <input formControlName="emailDonor">
+    <div *ngIf="donationForm.get('emailDonor')!.invalid &&
+     (donationForm.get('emailDonor')!.touched || donationForm.get('emailDonor')!.dirty)">
+        <div *ngIf="donationForm.get('emailDonor')!.errors!['required']">
+            phone is required
+        </div>
+
+    </div>
+
+
+    <h5> Phone :</h5>
+    <input type="number" formControlName="phoneDonor">
+    <div *ngIf="donationForm.get('phoneDonor')!.invalid &&
+     (donationForm.get('phoneDonor')!.touched || donationForm.get('phoneDonor')!.dirty)">
+        <div *ngIf="donationForm.get('phoneDonor')!.errors!['required']">
+            phone is required
+        </div>
+        <div *ngIf="donationForm.get('phoneDonor')!.errors!['pattern']">
+            phone is invalid
+        </div>
+    </div>
+
+    <br><br><br>
+    <button type="submit" [disabled]="donationForm.invalid"> Valider </button>
+
+
+  </form>

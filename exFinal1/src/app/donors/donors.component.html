@@ -1,0 +1,17 @@
+
+
+
+
+<table>
+    <tbody>
+
+        <div *ngFor="let donor of donors">
+
+            <br><br>
+            <h3> Donor : </h3>  <a [routerLink]="['/details', donor.Donor.id]"> Details</a>
+            <td> Name : {{ donor.Donor.name }} </td><br>
+            <td> Email: {{ donor.Donor.email }} </td><br>
+            <td> Phone: {{ donor.Donor.phone }} </td><br>
+       </div>
+    </tbody>
+</table>
